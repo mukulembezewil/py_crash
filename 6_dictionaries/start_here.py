@@ -107,7 +107,18 @@ print('_______________________\n')
 	# Looping through all key value pairs:
 
 user_0 = {
-	"username": "efermi",
-	"first": "henrico",
-	"last": "efermi",
+	"username": "hermit#2",
+	"first_name": "mukulembeze",
+	"last_name": "wilfred",
 	}
+
+for key, value in user_0.items():
+	print(f"\nKey: {key}")
+	print(f"\nValue: {value.title()}")
+	print('_______________________\n')
+
+for name, language in favorite_languages.items():
+    print(f"\nName: {name.title()}")
+    print(f"language: {language}")
+    print('************************\n')
+
