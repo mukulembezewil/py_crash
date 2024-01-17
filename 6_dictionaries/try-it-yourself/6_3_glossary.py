@@ -8,3 +8,4 @@ glossary = {
 
 for word in glossary:
     print(f"{word}: \n {glossary[word]}\n")
+    
