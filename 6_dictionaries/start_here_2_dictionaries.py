@@ -195,3 +195,108 @@ print(numbers)
 
 ###############################################################
 
+# LOOPING THROUGH THE DICTIONARIES
+
+# Example Dictionary - BASIC DICTIONARY
+person = {'name': 'John Doe', 'age': 25, 'gender': 'Male'}
+
+# Looping through keys
+for key in person:
+    print(key, person[key])
+
+# Output:
+# name John Doe
+# age 25
+# gender Male
+
+###############################################################
+
+# Example Dictionary - NESTED DICTIONARY
+student = {'name': 'Alice', 'age': 20, 'grades': {'math': 90, 'english': 85, 'science': 92}}
+
+# Looping through outer dictionary keys and values
+for key, value in student.items():
+    print(key, value)
+
+# Looping through inner dictionary keys and values
+for subject, score in student['grades'].items():
+    print(subject, score)
+
+# Output:
+# name Alice
+# age 20
+# grades {'math': 90, 'english': 85, 'science': 92}
+# math 90
+# english 85
+# science 92
+
+###############################################################
+
+# Example Dictionary - LIST AS A VALUE
+employee = {'name': 'Bob', 'department': 'IT', 'skills': ['Python', 'JavaScript', 'SQL']}
+
+# Looping through keys and values
+for key, value in employee.items():
+    print(key, value)
+
+# Looping through the skills list
+for skill in employee['skills']:
+    print(skill)
+
+# Output:
+# name Bob
+# department IT
+# skills ['Python', 'JavaScript', 'SQL']
+# Python
+# JavaScript
+# SQL
+
+###############################################################
+
+# Example Dictionary - TUPLE AS A KEY
+location = {('latitude', 'longitude'): (37.7749, -122.4194), 'city': 'San Francisco'}
+
+# Looping through keys and values
+for key, value in location.items():
+    print(key, value)
+
+# Output:
+# ('latitude', 'longitude') (37.7749, -122.4194)
+# city San Francisco
+
+###############################################################
+
+# Example Dictionary - MIXED DATA TYPES
+record = {'id': 101, 'name': 'Eva', 'is_student': True, 'marks': 85, 'courses': ['Python', 'Java']}
+
+# Looping through keys and values
+for key, value in record.items():
+    print(key, value)
+
+# Looping through the list
+for course in record['courses']:
+    print(course)
+
+# Output:
+# id 101
+# name Eva
+# is_student True
+# marks 85
+# courses ['Python', 'Java']
+# Python
+# Java
+
+###############################################################
+
+# Example Dictionary - DICTIONARY COMPREHENSION
+numbers = {x: x**2 for x in range(1, 6)}
+
+# Looping through keys and values
+for key, value in numbers.items():
+    print(key, value)
+
+# Output:
+# 1 1
+# 3 9
+# 4 16
+# 5 25
