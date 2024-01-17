@@ -6,6 +6,6 @@ glossary = {
     "Internet": "A network of networks around the glolbe",
     }
 
-for word in glossary:
-    print(f"{word}: \n {glossary[word]}\n")
-    
+print(f"Dictionary: {glossary['Dictionary']}")
+print(f"Tuple: {glossary['Tuple']}")
+print(f"Internet: {glossary['Internet']}")
